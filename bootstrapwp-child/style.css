@@ -1,0 +1,20 @@
+/*
+Theme Name: bootstrapwp child theme
+Template: bootstrapwp
+Theme URI: http://www.jingdesignstudio.com
+Author: rewrite the child theme by Jasmine
+Author URI: http://www.jingdesignstudio.com
+Description: A child theme of bootstrapwp-Twitter-Bootstrap-for-WordPress-master
+Version: 1.0
+*/
+
+
+
+@import url("../bootstrapwp/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+body {
+	background-color: #4DDB94;
+}
