@@ -1,34 +1,64 @@
 <?php
 /**
- * Template Name: Default Page
- * Description: Page template with a content container and right sidebar.
+ * Template Name: jasmine - Home page
+ * Description: Displays page title and content in Hero section above 3 widgets.
  *
  * @package WordPress
  * @subpackage BootstrapWP
  */
 get_header(); ?>
-<?php while (have_posts()) : the_post(); ?>
 
-  <div class="container">
-    <div class="row">
-        <div class="span12">
-            <?php if (function_exists('bootstrapwp_breadcrumbs')) {
-            bootstrapwp_breadcrumbs();
-        } ?>
-        </div><!--/.span12 -->
-    </div><!--/.row -->
+<div class="container">
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <header class="page-title">
-        <h1><?php the_title();?></h1>
-    </header>
+        <div class="hero-unit">
+                <h1><?php the_title();?></h1>
+                <?php the_content(); ?>
+        </div><!--/.hero-unit -->
 
-  <div class="row content">
-    <div class="span8">
-        <?php the_content(); ?>
-        <?php wp_link_pages( array('before' => '<div class="page-links">' . __('Pages:', 'bootstrapwp'), 'after' => '</div>')); ?>
-        <?php edit_post_link(__('Edit', 'bootstrapwp'), '<span class="edit-link">', '</span>'); ?>
-        <?php endwhile; // end of the loop. ?>
-    </div><!-- /.span8 -->
+    <?php endwhile; endif; ?>
 
-    <?php get_sidebar(); ?>
-    <?php get_footer(); ?>
+
+
+     <?php
+$page_id = 180;
+$page_data = get_page( $page_id );
+
+$title = $page_data->post_title; // Get title
+$content = $page_data->post_content; // Get Content
+?>
+<div id="work">
+<?php echo '<h1>'.$title.'</h1>';?> 
+<?php echo $content;?>  
+</div>
+
+
+     <?php
+$page_id = 191;
+$page_data = get_page( $page_id );
+
+$title = $page_data->post_title; // Get title
+$content = $page_data->post_content; // Get Content
+?>
+<div id="about">
+<?php echo '<h1>'.$title.'</h1>';?> 
+<?php echo $content;?>  
+</div>
+
+     <?php
+$page_id = 202;
+$page_data = get_page( $page_id );
+
+$title = $page_data->post_title; // Get title
+$content = $page_data->post_content; // Get Content
+?>
+<div id="service">
+<?php echo '<h1>'.$title.'</h1>';?> 
+<?php echo $content;?>  
+</div>
+
+
+
+</div><!--/.container -->
+
+<?php get_footer(); ?>
