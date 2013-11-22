@@ -56,11 +56,15 @@ get_header(); ?>
                         <?php else : ?>
                             <div class="span8">
                         <?php endif; ?>
+
                                 <?php the_excerpt(); ?>
                             </div>
+
                     </div><!-- /.row -->
 
                     <hr/>
+                    <p>Comment (<?php comments_number( 'no', '1', '%' ); ?>)</p> 
+                    <p><?php the_tags(); ?></p>
                 </div><!-- /.post_class -->
 
             <?php // end of blog post loop.

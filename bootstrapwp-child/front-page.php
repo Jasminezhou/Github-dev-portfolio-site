@@ -29,7 +29,7 @@ $content = $page_data->post_content; // Get Content
 ?>
 <div id="work">
 <?php echo '<h1>'.$title.'</h1>';?> 
-<?php echo $content;?>  
+<?php echo $content;?> 
 </div>
 
 
@@ -40,10 +40,13 @@ $page_data = get_page( $page_id );
 $title = $page_data->post_title; // Get title
 $content = $page_data->post_content; // Get Content
 ?>
+
 <div id="about">
 <?php echo '<h1>'.$title.'</h1>';?> 
 <?php echo $content;?>  
 </div>
+
+
 
      <?php
 $page_id = 202;
