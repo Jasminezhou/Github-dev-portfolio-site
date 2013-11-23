@@ -25,6 +25,7 @@ body {
 
 .container{
   background-color: #FFF;
+  border-radius: 15px;
 }
 
 
@@ -33,6 +34,10 @@ body {
 .navbar-fixed-top, .navbar-fixed-bottom {
     position: fixed;
 }
+.navbar-inner .container{
+background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
+    background-repeat: repeat-x;
+  }
 
 
 /*post layout*/
@@ -66,14 +71,42 @@ body {
   background-color: rgb(240,133,78);
 }
 
-footer{
+/* services */
+#service{
+  margin-bottom: 100px;
+}
 
+
+/* footer */
+footer{
+  background-image: url("imgs/map.png");
   height: 300px;
 }
 
-footer img{
-background-color: #FFF;
-border-radius: 50%;
-  width: 100px;
+.logo{
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-top: -60px;
+    padding: 7px;
+    width: 100px;
 }
+.icons{
+  margin: 30px 20px;
+}
+
+.copyright{
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 

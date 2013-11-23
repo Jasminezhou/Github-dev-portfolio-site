@@ -27,16 +27,14 @@ get_header(); ?>
 		?>
 		<div id="work">
 		<?php echo '<h1>'.$title.'</h1>';?> 
-		<?php the_content(); ?> 
-		<?php
-$new_query_1 = new WP_Query();
-$new_query_1->query(array('page_id' => 180));
-while ($new_query_1->have_posts()) :
-$new_query_1->the_post();
-the_content();
-endwhile;
-wp_reset_query();
-?>
+		<?php $new_query_1 = new WP_Query();// Get title
+			$new_query_1->query(array('page_id' => 180));
+			while ($new_query_1->have_posts()) :// The Loop of "Get Content"
+			$new_query_1->the_post();
+			the_content();
+			endwhile;
+			wp_reset_query();
+		?>
 		</div>
 
 		<!-- #about -->
