@@ -13,22 +13,25 @@ Version: 1.0
 @import url("../bootstrapwp/style.css");
 
 /* general */
-
+/* yellow: rgb(248,216,21) */
+/* orange: rgb(240,133,78) */
 body {
-	background-color: #B2F0E0;
+	background-color: rgb(248,216,21);  
+}
+
+.hero-unit{
+  background-color: transparent;
 }
 
 .container{
   background-color: #FFF;
 }
+
+
+
 /* Nav bar*/
 .navbar-fixed-top, .navbar-fixed-bottom {
     position: fixed;
-}
-
-.navbar-inverse .brand{
-  /*background-image: url("imgs/logo.png");*/
-  background: red;
 }
 
 
@@ -50,7 +53,7 @@ body {
   background: red;
 }
 
-.pic {
+.attachment-thumbnail {
   width: 150px;
   height: 150px;
   margin: -25px;
@@ -58,3 +61,19 @@ body {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+/* about */
+#about{
+  background-color: rgb(240,133,78);
+}
+
+footer{
+
+  height: 300px;
+}
+
+footer img{
+background-color: #FFF;
+border-radius: 50%;
+  width: 100px;
+}
+
