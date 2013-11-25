@@ -1,13 +1,15 @@
 <?php
 /**
- * Template Name: Case - Study Template
+ * Template Name: jasmine Case Template 1
  * Description: Displays blog posts with pagination and featured image.
  *
  * @package WordPress
  * @subpackage BootstrapWP
  */
 get_header(); ?>
+
 <div class="container">
+   
     <div class="row">
         <div class="span12">
             <?php if (function_exists('bootstrapwp_breadcrumbs')) {
@@ -47,7 +49,7 @@ get_header(); ?>
                     <div class="row">
                         <?php // Post thumbnail conditional display.
                         if ( bootstrapwp_autoset_featured_img() !== false ) : ?>
-                            <div class="span2">
+                            <div class="span6">
                                 <a href="<?php the_permalink(); ?>" title="<?php  the_title_attribute( 'echo=0' ); ?>">
                                     <?php echo bootstrapwp_autoset_featured_img(); ?>
                                 </a>
@@ -61,6 +63,10 @@ get_header(); ?>
                     </div><!-- /.row -->
 
                     <hr/>
+                    <div class="post-footer">
+                    <p class="comment" >Comment (<?php comments_number( 'no', '1', '%' ); ?>)</p> 
+                    <p class="tags"><?php the_tags(); ?></p>
+                    </div>
                 </div><!-- /.post_class -->
 
             <?php // end of blog post loop.

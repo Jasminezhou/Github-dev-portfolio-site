@@ -61,6 +61,7 @@ get_header(); ?>
                     </div><!-- /.row -->
 
                     <hr/>
+                    
                     <p>Comment (<?php comments_number( 'no', '1', '%' ); ?>)</p> 
                     <p><?php the_tags(); ?></p>
                 </div><!-- /.post_class -->

@@ -17,7 +17,7 @@ get_header(); ?>
                 } ?>
             </div><!--/.span12 -->
         </div><!--/.row -->
-
+<div class="hero-unit">
         <header class="page-title">
             <h1><?php the_title();?></h1>
         </header>
@@ -25,7 +25,7 @@ get_header(); ?>
         <div class="row content">
             <?php the_content(); ?>
             <?php endwhile; // end of the loop. ?>
-
+</div>
         </div><!-- .row content -->
     </div><!--/.container -->
 

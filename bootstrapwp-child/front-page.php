@@ -79,8 +79,10 @@ get_header(); ?>
 		<center><?php echo $content;?></center>
 		</div></div>
 
+</div><!--/.container -->
 
-		<script type="text/javascript" src="wp-content/themes/bootstrapwp-child/js/greensock/TweenMax.min.js"></script>
+
+<script type="text/javascript" src="wp-content/themes/bootstrapwp-child/js/greensock/TweenMax.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   		<script>window.jQuery || document.write('<script src="_/js/jquery-1.9.1.min.js"><\/script>')</script>
   		<script src="wp-content/themes/bootstrapwp-child/js/jquery.superscrollorama.js"></script>
@@ -96,9 +98,5 @@ get_header(); ?>
 			
 		});
 	</script>
-
-
-
-</div><!--/.container -->
 
 <?php get_footer(); ?>

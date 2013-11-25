@@ -13,7 +13,7 @@ Version: 1.0
 @import url("../bootstrapwp/style.css");
 
 /* general */
-/* yellow: rgb(248,216,21) */
+/* yellow: rgb(248,216,21) #F8D815*/
 /* orange: rgb(240,133,78) #F0854E*/
 body {
 	background-color: #333;
@@ -38,8 +38,42 @@ body {
 .navbar-inner .container{
 background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
     background-repeat: repeat-x;
+    height: 60px;
   }
 
+.navbar .nav > li > a{
+  padding: 20px;
+  font-size: 16px;
+}
+
+
+.navbar .brand{
+  margin-top: 15px;
+  padding: 20px;
+}
+
+#main-menu{
+  float: right;
+  margin-top: 15px;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  background-color: #F8D815;
+  color: #333333;
+  text-decoration: none;
+}
+
+/*hire me*/
+.menu-item-163{/* button blog */
+
+}
+
+#menu-item-174{/* button contact */
+  background-image: url("imgs/hire me.png");
+  background-repeat: no-repeat;
+  padding-right: 70px;
+}
 
 /*post layout*/
 .form-allowed-tags{
@@ -274,11 +308,54 @@ perspective-origin: 0% 0%;
 
 
 
+ 
+/*---------------Case Study & BLOG----------------*/
+.row{
+  margin-left: 0;
+  margin-top: 40px;
+}
+
+.well{
+  border: 1px solid #F8D815;
+  background-color: #FFFFFF;
+}
+
+h3{
+  color: #F0854E;
+  font-size: 30px;
+}
+
+a{
+  color:#F0854E;
+}
+.widget ul > li > a:hover{
+  background-color: #F8D815;
+}
+
+.comment{
+  float: left;
+}
+.tags{
+  float: right;s
+}
+
+.post-footer{
+  height: 50px;
+}
 
 
-
-
-
+/*---------------CONTACT----------------*/
+#wpcf7-f27-p172-o1{
+  float: right;
+  background-color: #F8D815;
+  padding: 20px;
+  text-align: center;
+  width: 350px;
+  border-radius: 15px;
+}
+input, textarea{
+  width: 250px;
+}
 
 
 
