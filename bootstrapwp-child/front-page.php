@@ -12,11 +12,24 @@ get_header(); ?>
 	
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div id="cover">     
-            <h1><?php the_title();?></h1>
             <?php the_content(); ?>
         
     	<?php endwhile; endif; ?>
 		</div>
+
+		<!-- #slogan -->
+     	<?php
+		$page_id = 297;
+		$page_data = get_page( $page_id );
+		$title = $page_data->post_title; // Get title
+		$content = $page_data->post_content; // Get Content
+		?>
+		<div id="slogan">
+		<div class="hero-unit">
+		<P><?php echo $content;?></P>
+		</div> 
+		</div>
+
 
     	<!-- #work -->
      	<?php $page_id = 180;

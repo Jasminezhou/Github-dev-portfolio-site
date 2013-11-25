@@ -14,7 +14,7 @@ Version: 1.0
 
 /* general */
 /* yellow: rgb(248,216,21) */
-/* orange: rgb(240,133,78) */
+/* orange: rgb(240,133,78) #F0854E*/
 body {
 	background-color: #333;  
 }
@@ -131,17 +131,32 @@ footer{
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-      min-height: 700px;
+      min-height: 800px;
+      width: 100%;
 }
-#work {
+#slogan {
+    /*background: #fff url("imgs/home-logo-grid.png") no-repeat center center fixed;*/
     background: #fff url("imgs/home-logo-grid.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-      min-height: 600px;
-      opacity: 0.6;
+      min-height: 800px;
 }
+
+#slogan .hero-unit {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slogan p{
+    /*background-color:#F0854E;*/
+    color: #FFFFFF;
+    font-size: 60px;
+    line-height: 150%;
+    margin-top: 600px;
+}
+
+
 
 
 
