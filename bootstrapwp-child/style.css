@@ -316,6 +316,7 @@ perspective-origin: 0% 0%;
   margin-top: 40px;
 }
 
+
 .well{
   border: 1px solid #F8D815;
   background-color: #FFFFFF;
@@ -333,15 +334,26 @@ a{
   background-color: #F8D815;
 }
 
-.comment{
-  float: left;
-}
+
 .tags{
   float: right;s
 }
 
 .post-footer{
   height: 50px;
+}
+
+.template-meta{
+    background-color: #000000;
+    border-radius: 20px;
+    color: #F8D815;
+    display: block;
+    font-size: 30px;
+    height: 50px;
+    line-height: 90%;
+
+    padding: 20px;
+    width: 50px;
 }
 
 

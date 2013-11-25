@@ -10,6 +10,7 @@ get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
 
   <div class="container">
+    
     <div class="row">
         <div class="span12">
             <?php if (function_exists('bootstrapwp_breadcrumbs')) {
@@ -18,11 +19,15 @@ get_header(); ?>
         </div><!--/.span12 -->
     </div><!--/.row -->
 
+
+<?php get_sidebar('blog'); ?>
+
     <header class="post-title">
         <h1><?php the_title();?></h1>
     </header>
 
     <div class="row content">
+
         <div class="span8">
              <p class="meta"><?php echo bootstrapwp_posted_on();?></p>
             <?php the_content(); ?>
@@ -33,6 +38,8 @@ get_header(); ?>
             <?php comments_template(); ?>
             <?php bootstrapwp_content_nav('nav-below'); ?>
         </div><!-- /.span8 -->
+    </div><!--/.row content -->
 
-    <?php get_sidebar('blog'); ?>
+</div><!--/.container -->
+    
     <?php get_footer(); ?>
