@@ -13,6 +13,6 @@
                     dynamic_sidebar("sidebar-posts");
                 } ?>
             </div><!--/.well .sidebar-nav -->
-        </div><!-- /.span4 -->
-    </div><!-- /.row .content -->
-</div><!--/.container -->
+        </div><!-- /.span3 -->
+    <!--</div> /.row .content -->
+<!--</div><!--/.container -->

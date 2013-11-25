@@ -19,6 +19,7 @@ get_header(); ?>
     </div><!--/.row -->
 
     <div class="row content">
+        <?php get_sidebar('blog'); ?>
         <div class="span8">
             <?php while (have_posts()) : the_post(); ?>
                 <header class="page-title">
@@ -75,5 +76,7 @@ get_header(); ?>
             <?php bootstrapwp_content_nav('nav-below');?>
         </div>
 
-    <?php get_sidebar('blog'); ?>
+    <?php //get_sidebar('blog'); ?>
+        </div> /.row .content -->
+</div><!--/.container -->
     <?php get_footer(); ?>
