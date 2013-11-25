@@ -74,9 +74,10 @@ get_header(); ?>
 		$content = $page_data->post_content; // Get Content
 		?>
 		<div id="service">
+		<div class="hero-unit">
 		<?php echo '<h1>'.$title.'</h1>';?> 
-		<?php echo $content;?>  
-		</div>
+		<center><?php echo $content;?></center>
+		</div></div>
 
 
 		<script type="text/javascript" src="wp-content/themes/bootstrapwp-child/js/greensock/TweenMax.min.js"></script>
