@@ -60,9 +60,9 @@ get_header(); ?>
 		?>
 		<div id="about">
 		<div class="hero-unit">
-		<?php echo '<h1>'.$title.'</h1>';?> 
-		<?php echo $content;?> 
-		</div> 
+		<?php echo '<h2 id="scale-it">'.$title.'</h2>';?> 
+		<center><?php echo $content;?> 
+		</center></div> 
 		</div>
 
 
@@ -77,6 +77,24 @@ get_header(); ?>
 		<?php echo '<h1>'.$title.'</h1>';?> 
 		<?php echo $content;?>  
 		</div>
+
+
+		<script type="text/javascript" src="wp-content/themes/bootstrapwp-child/js/greensock/TweenMax.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  		<script>window.jQuery || document.write('<script src="_/js/jquery-1.9.1.min.js"><\/script>')</script>
+  		<script src="wp-content/themes/bootstrapwp-child/js/jquery.superscrollorama.js"></script>
+		<script>
+		$(document).ready(function() {
+			var controller = $.superscrollorama();
+
+			controller.addTween('#scale-it', TweenMax.fromTo( $('#scale-it'), 1, {css:{opacity:0, fontSize:'20px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, fontSize:'80px'}, ease:Quad.easeInOut}));
+
+			controller.addTween('#fly-left', TweenMax.from( $('#fly-left'), 2, {css:{right:'1000px'},immediateRender:true, ease:Quad.easeInOut}));
+
+			controller.addTween('#fly-right', TweenMax.from( $('#fly-right'), 1, {css:{left:'1000px'},immediateRender:true, ease:Quad.easeInOut}));
+			
+		});
+	</script>
 
 
 

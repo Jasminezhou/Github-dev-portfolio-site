@@ -16,7 +16,8 @@ Version: 1.0
 /* yellow: rgb(248,216,21) */
 /* orange: rgb(240,133,78) #F0854E*/
 body {
-	background-color: #333;  
+	background-color: #333;
+  font-family:Myriad Pro,Arial,Helvetica,sans-serif;  
 }
 
 .hero-unit{
@@ -92,10 +93,7 @@ background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
 }
 
 
-/* about */
-#about{
-  background-color: rgb(240,133,78);
-}
+
 
 /* services */
 #service{
@@ -155,6 +153,29 @@ footer{
     line-height: 150%;
     margin-top: 600px;
 }
+/* about */
+#about{
+  background-color: rgb(240,133,78);
+  overflow: hidden;
+
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: normal;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+article { 
+  width: 80%;
+  color: #F5F5F5;
+  font-weight: lighter;
+  margin-top: 20px;
+}
+
+#fly-left,#fly-right { position: relative; }
+#scale-it { width: 500%; padding: 0; }
 
 
 
