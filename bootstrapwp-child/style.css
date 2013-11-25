@@ -47,9 +47,14 @@ background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
 
 
 /* work */
+#work{
+ margin-bottom: 200px;
+ margin-left: 5%;
+}
+
 .square {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   margin: 25px;
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -59,13 +64,34 @@ background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
 }
 
 .attachment-thumbnail {
-  width: 150px;
-  height: 150px;
-  margin: -25px;
+   height: 300px;
+    margin-left: -53px;
+    margin-top: -47px;
+    max-width: none;
+    width: 300px;
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.hero-unit li {
+    margin-top: 90px;
+    display: inline-flex;
+    margin-left: 90px;
+}
+
+.hero-unit li:nth-child(even) {
+    border: 1px solid #FF0000;
+    margin-bottom: -140px;
+    margin-left: 0px;
+}
+
+.hero-unit li:nth-child(odd) {
+    border: 1px solid green;
+    margin-left: -30px;
+}
+
+
 /* about */
 #about{
   background-color: rgb(240,133,78);
