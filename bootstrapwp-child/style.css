@@ -16,7 +16,7 @@ Version: 1.0
 /* yellow: rgb(248,216,21) */
 /* orange: rgb(240,133,78) */
 body {
-	background-color: rgb(248,216,21);  
+	background-color: #333;  
 }
 
 .hero-unit{
@@ -125,6 +125,23 @@ footer{
 }
 
 
+#cover {
+    background: #fff url("imgs/home-logo.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      min-height: 700px;
+}
+#work {
+    background: #fff url("imgs/home-logo-grid.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      min-height: 600px;
+      opacity: 0.6;
+}
 
 
 
