@@ -22,6 +22,7 @@ body {
 
 .hero-unit{
   background-color: transparent;
+   margin-bottom: 0;
 }
 
 .container{
@@ -157,6 +158,9 @@ footer .container{
 
 .copyright{
   text-align: right;
+  color: #000000;
+  font-size: 16px;
+  margin-right: 5%;
 }
 
 
@@ -373,7 +377,6 @@ a{
 }
 
 #contact .center{
-  border:1px solid green;
   overflow: hidden;
 }
 
@@ -389,22 +392,24 @@ a{
 
 .envelope-front{
 position: relative;
-    top: -120px;
+    top: -150px;
     width: 500px;
+    overflow: hidden;
 }
-/*#contact .span6{
+#contact .span5{
   background-image: url("imgs/envelope-back.png");
-  background-repeat: no-repeat;
-  background-size:400px 200px;
-  background-position:center;
-}*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 98% auto;
+}
 
 
-#wpcf7-f27-p172-o1{
+#wpcf7-f345-p172-o1{
   background-color: #F8D815;
   padding: 20px;
   width: 80%;
   border-radius: 15px;
+  height: 450px;
 }
 
 input, textarea{
