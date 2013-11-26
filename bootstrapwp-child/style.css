@@ -351,23 +351,64 @@ a{
     font-size: 30px;
     height: 50px;
     line-height: 90%;
-
     padding: 20px;
     width: 50px;
 }
 
 
 /*---------------CONTACT----------------*/
+#contact{
+  margin-bottom: 90px;
+
+}
+#contact .row{
+   overflow: hidden;
+
+}
+.contact{
+  background-image: url("imgs/map.png");
+  background-repeat: no-repeat;
+  background-position:center bottom;
+  background-repeat: repeat-x; 
+}
+
+#contact .center{
+  border:1px solid green;
+  overflow: hidden;
+}
+
+.map {
+    border: 0 none;
+    bottom: 0;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    top: 100px;
+}
+
+
+.envelope-front{
+position: relative;
+    top: -120px;
+    width: 500px;
+}
+/*#contact .span6{
+  background-image: url("imgs/envelope-back.png");
+  background-repeat: no-repeat;
+  background-size:400px 200px;
+  background-position:center;
+}*/
+
+
 #wpcf7-f27-p172-o1{
-  float: right;
   background-color: #F8D815;
   padding: 20px;
-  text-align: center;
-  width: 350px;
+  width: 80%;
   border-radius: 15px;
 }
+
 input, textarea{
-  width: 250px;
+  width: 70%;
 }
 
 

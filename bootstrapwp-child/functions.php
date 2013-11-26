@@ -1,0 +1,1 @@
+<?php add_image_size( 'lastest-work', 9999, 500 ); //300 pixels wide (and unlimited height)
