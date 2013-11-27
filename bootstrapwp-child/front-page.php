@@ -60,7 +60,7 @@ get_header(); ?>
 		?>
 		<div id="about">
 		<div class="hero-unit">
-		<?php echo '<h2 id="scale-it">'.$title.'</h2>';?> 
+		<?php echo '<h1 id="scale-it">'.$title.'</h1>';?> 
 		<center><?php echo $content;?> 
 		</center></div> 
 		</div>

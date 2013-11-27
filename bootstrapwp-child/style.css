@@ -85,6 +85,22 @@ background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
  margin-left: 5%;
 }
 
+#work h1{
+  padding-top: 50px;
+}
+/*
+.square:first-child {
+  width: 300px;
+  height: 300px;
+  margin: 25px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  overflow: hidden;
+  background: red;
+}
+*/
+
 .square {
   width: 200px;
   height: 200px;
@@ -93,7 +109,7 @@ background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   overflow: hidden;
-  background: red;
+  
 }
 
 .attachment-thumbnail {
@@ -108,20 +124,35 @@ background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
 }
 
 .hero-unit li {
-    margin-top: 90px;
-    display: inline-flex;
-    margin-left: 90px;
+    /*margin-top: 90px;
+    margin-left: 90px;*/
+    padding: 3px;
+    position: relative;
+    display: inline-block;
+}
+ul, ol{
+width: 80%;
 }
 
 .hero-unit li:nth-child(even) {
-    border: 1px solid #FF0000;
-    margin-bottom: -140px;
-    margin-left: 0px;
+    /*left: -88px;
+    margin-right: -41px;
+    margin-top: 64px;
+    top: 216px;*/
+    left: -63px;
+    margin-right: -168px;
+    margin-top: 32px;
+    top: 163px;
 }
 
 .hero-unit li:nth-child(odd) {
-    border: 1px solid green;
-    margin-left: -30px;
+    /*left: -41px;
+    margin-left: -44px;
+    top: 57px;*/
+    left: 25px;
+    margin-left: -8px;
+    margin-top: 68px;
+    top: 1px;
 }
 
 
@@ -133,11 +164,9 @@ background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
 }
 
 
-/* footer */
+/* footer*/ 
 footer .container{
-  background-image: url("imgs/map.png");
-  height: 300px;
-  background-color: #F8D815;
+  background-color:transparent;
   margin-bottom: 90px;
 }
 
@@ -200,12 +229,20 @@ footer .container{
   overflow: hidden;
 
 }
+#about .hero-unit{
+  min-height: 700px;
+}
+#about h1{
+  padding-top: 50px;
+  color: #FFFFFF;
+}
 
-h2 {
+
+h1 {
   font-size: 50px;
   font-weight: normal;
   margin: 0;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 article { 
@@ -221,7 +258,7 @@ article {
 
 /* service */
 #service{
-  min-height: 500px;
+  min-height: 600px;
 }
 
 .circle {

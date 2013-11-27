@@ -9,7 +9,7 @@
 get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
 
-<section id="contact">
+<div id="contact">
     <div class="container contact">
 
         <div class="row">
@@ -49,6 +49,7 @@ get_header(); ?>
     </div><!--/.container -->
 
 </div><!--/.hero-unit -->
-</section>
-<!--<?php get_footer(); ?>-->
+
+</div>
+<?php get_footer(); ?>
  <!--<img class="map" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/map.png" alt="map">-->
