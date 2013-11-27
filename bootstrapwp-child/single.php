@@ -40,6 +40,6 @@ get_header(); ?>
         </div><!-- /.span8 -->
     </div><!--/.row content -->
 
-</div><!--/.container -->
+  </div><!--/.container -->
     
     <?php get_footer(); ?>
