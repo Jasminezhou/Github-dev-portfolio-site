@@ -8,7 +8,7 @@
  */
 get_header(); ?>
 
-<div class="container">
+<div class="container collect">
    
     <div class="row">
         <div class="span12">
@@ -47,25 +47,20 @@ get_header(); ?>
 
                     <div class="row">
                         <div class="span1">
-                    <div class="template-meta"><!--post date -->
-                        <?php the_date('M d');?>
-                    </div>
-                    </div>
+                            <div class="template-meta"><!--post date -->
+                                <?php the_date('M d');?>
+                            </div>
+                        </div><!--.span1-->
 
                     
                         <?php // Post thumbnail conditional display.
                         if ( bootstrapwp_autoset_featured_img() !== false ) : ?>
                             <div class="span6">
-                     
-                    <div>
-                                <a href="<?php the_permalink(); ?>" title="<?php  the_title_attribute( 'echo=0' ); ?>">
-                                    <?php //the_post_thumbnail('large');
-                                    echo bootstrapwp_autoset_featured_img(); ?>
-                                </a>
-                            </div>
-                            
-
-                            
+                        <div>
+                            <a href="<?php the_permalink(); ?>" title="<?php  the_title_attribute( 'echo=0' ); ?>">
+                                <?php //the_post_thumbnail('large');
+                                echo bootstrapwp_autoset_featured_img(); ?></a>
+                        </div>
 
                         <?php else : ?>
 
