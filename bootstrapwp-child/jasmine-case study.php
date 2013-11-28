@@ -40,15 +40,12 @@ get_header(); ?>
             if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                 <div <?php post_class(); ?>>
-                    
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
-                        <h3><?php the_title();?></h3>
-                    </a>
 
                     <div class="row">
                         <div class="span1">
                             <div class="template-meta"><!--post date -->
-                                <?php the_date('M d');?>
+                                <span class="date"><?php the_time('j'); ?></span>
+                                <span class="month"><?php the_date('M');?></span>                              
                             </div>
                         </div><!--.span1-->
 
@@ -56,16 +53,21 @@ get_header(); ?>
                         <?php // Post thumbnail conditional display.
                         if ( bootstrapwp_autoset_featured_img() !== false ) : ?>
                             <div class="span6">
-                        <div>
-                            <a href="<?php the_permalink(); ?>" title="<?php  the_title_attribute( 'echo=0' ); ?>">
-                                <?php //the_post_thumbnail('large');
-                                echo bootstrapwp_autoset_featured_img(); ?></a>
-                        </div>
 
-                        <?php else : ?>
-
-                            <div class="span6">
-                        <?php endif; ?>
+                                <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
+                                    <h3><?php the_title();?></h3>
+                                </a>
+        
+                                <div>
+                                    <a href="<?php the_permalink(); ?>" title="<?php  the_title_attribute( 'echo=0' ); ?>">
+                                        <?php //the_post_thumbnail('large');
+                                        echo bootstrapwp_autoset_featured_img(); ?></a>
+                                </div>
+        
+                                <?php else : ?>
+        
+                                    <div class="span6">
+                                <?php endif; ?>
                                 <?php the_excerpt(); ?>
                             </div>
 

@@ -80,7 +80,13 @@ body {
 .form-allowed-tags{
   visibility: hidden;
 }
-
+/*------------ HOME ----------------------*/
+.home h1 {
+  font-size: 50px;
+  font-weight: normal;
+  margin: 0;
+  color: #000000;
+}
 
 /* work */
 #work{
@@ -218,13 +224,6 @@ footer .container{
 }
 
 
-h1 {
-  font-size: 50px;
-  font-weight: normal;
-  margin: 0;
-  color: #000000;
-}
-
 article { 
   width: 80%;
   color: #F5F5F5;
@@ -342,7 +341,27 @@ article {
 
 h3{
   color: #F0854E;
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: lighter; 
+}
+
+.template-meta{
+  font-size: 28px;
+  background-color: #F0854E;
+  border-radius: 15px;
+  color: #FFF;
+  display: block;
+  height: 40px;
+  padding: 15px;
+  width: 40px;
+}
+.date{
+  font-size: 35px;
+  line-height: 70%;
+}
+
+.month{
+  font-size: 20px;
 }
 
 a{
@@ -359,18 +378,6 @@ a{
 
 .post-footer{
   height: 50px;
-}
-
-.template-meta{
-  background-color: #000000;
-  border-radius: 15px;
-  color: #F8D815;
-  display: block;
-  font-size: 30px;
-  height: 50px;
-  line-height: 90%;
-  padding: 20px;
-  width: 50px;
 }
 
 
@@ -474,13 +481,16 @@ body{
 .template-meta {
     font-size: 20px;
     height: 30px;
-    margin-left: -400px;
     margin-top: 10px;
     padding: 15px;
     width: 30px;
 }
-
-
+.date {
+    font-size: 30px;
+}
+.month {
+    font-size: 18px;
+}
 
 }
 
