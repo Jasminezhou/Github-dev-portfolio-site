@@ -30,10 +30,6 @@ body {
   border-radius: 15px;
 }
 
-a:hover{
-  text-decoration: underline;
-  color: #F0854E;
-}
 
 
 /* Nav bar*/
@@ -72,7 +68,7 @@ a:hover{
 }
 
 /*hire me*/
-#menu-item-174{/* button contact */
+#menu-item-51{/* button contact */
   background-image: url("imgs/hire me.png");
   background-repeat: no-repeat;
   padding-right: 70px;
@@ -82,6 +78,7 @@ a:hover{
 .form-allowed-tags{
   visibility: hidden;
 }
+
 /*------------ HOME ----------------------*/
 .home h1 {
   font-size: 50px;
@@ -89,6 +86,8 @@ a:hover{
   margin: 0;
   color: #000000;
 }
+
+
 
 /* work */
 #work{
@@ -119,15 +118,6 @@ a:hover{
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-}
-.attachment-thumbnail:hover{
-  width: 330px;
-  height: 330px;
 }
 
 .hero-unit li {
@@ -174,18 +164,7 @@ footer .container{
   margin-top: -60px;
   padding: 7px;
   width: 100px;
-  height: auto;
-  -webkit-transition:width .2s, height .2s;
-     -moz-transition:width .2s, height .2s;
-       -o-transition:width .2s, height .2s;
 }
-.logo:hover{
-  width: 105px;
-}
-footer a:hover{
-  background-color: transparent;
-}
-
 .email, .phone{
   height:30px;
   width:30px;
@@ -268,7 +247,7 @@ article {
   position: relative;
   text-align: center;
   cursor: default;
-  margin-left: 60px;
+  margin-left: 30px;
 
 }
 
@@ -358,16 +337,15 @@ article {
 
 
 .well{
-  border: 0 none;
-  margin-top: 90px;
+  border: 1px solid #F8D815;
+  background-color: #FFFFFF;
 }
 
 h3{
   color: #F0854E;
   font-size: 35px;
-  font-weight: lighter;
+  font-weight: lighter; 
 }
-
 .template-meta{
   font-size: 28px;
   background-color: #F0854E;
@@ -402,16 +380,7 @@ a{
 .post-footer{
   height: 50px;
 }
-/*---------------Single page of Case & Blog ----------------*/
-.button, #submit, .widget_search #searchsubmit, .reply .comment-reply-link{
-  background-image: -moz-linear-gradient(center top , #F8D815, #F0854E);
-  background-image: -webkit-linear-gradient(top, #F8D815, #F0854E);
-  background-color: #F8D815;
-}
-.button:hover,#submit:hover,.widget_search #searchsubmit:hover,.reply .comment-reply-link:hover {
-  background-color: #F0854E;
 
-}
 
 /*---------------CONTACT----------------*/
 #contact{
@@ -456,8 +425,7 @@ a{
   background-size: 98% auto;
 }
 
-
-#wpcf7-f345-p172-o1{
+#wpcf7-f38-p37-o1{
   background-color: #F8D815;
   padding: 20px;
   width: 80%;
@@ -472,19 +440,6 @@ input, textarea{
 .invite{
   margin: 0;
 }
-.pinterest,.linkedin,.twitter{
-  background: url("imgs/p.png");
-  display: block;
-  width: 50px;
-  height: 50px;
-  text-indent: -999em;
-  display: inline-block;
-}
-.linkedin{background-image: url("imgs/in.png");width: 49px;}
-.twitter{background-image: url("imgs/twetter.png");width: 49px;}
-.pinterest:hover{background-image: url("imgs/pyellow.png");}
-.linkedin:hover{background-image: url("imgs/inyellow.png");}
-.twitter:hover{background-image: url("imgs/twetteryellow.png");}
 
 /*---------------/ Responsive ----------------*/
 @media (min-width: 979px) and (max-width: 1200px){
@@ -557,7 +512,7 @@ body{
   }
   .hero-unit li,.hero-unit li:nth-child(odd),.hero-unit li:nth-child(even){
   display: block;
-    left: 0;
+    left: none;
     margin-right: 0;
     margin-top: 0;
     top: 0;
@@ -571,13 +526,11 @@ body{
 
 .hero-unit li,.hero-unit li:nth-child(odd),.hero-unit li:nth-child(even){
   display: block;
-    left: 0;
+    left: none;
     margin-right: 0;
     margin-top: 0;
     top: 0;
 }
-
-
 }
 
 

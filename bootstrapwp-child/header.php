@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
+                <a class="brand" href="<?php echo home_url('/'); ?>#cover" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
                     <?php bloginfo('name'); ?></a>
                 <?php wp_nav_menu(
                         array(

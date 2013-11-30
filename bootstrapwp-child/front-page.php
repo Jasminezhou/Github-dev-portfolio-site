@@ -82,21 +82,34 @@ get_header(); ?>
 </div><!--/.container -->
 
 
-<script type="text/javascript" src="wp-content/themes/bootstrapwp-child/js/greensock/TweenMax.min.js"></script>
+		<script type="text/javascript" src="wp-content/themes/bootstrapwp-child/js/greensock/TweenMax.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   		<script>window.jQuery || document.write('<script src="_/js/jquery-1.9.1.min.js"><\/script>')</script>
   		<script src="wp-content/themes/bootstrapwp-child/js/jquery.superscrollorama.js"></script>
-		<script>
-		$(document).ready(function() {
+  		
+
+<script>
+	$(document).ready(function() {
 			var controller = $.superscrollorama();
-
 			controller.addTween('#scale-it', TweenMax.fromTo( $('#scale-it'), 1, {css:{opacity:0, fontSize:'20px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, fontSize:'80px'}, ease:Quad.easeInOut}));
-
 			controller.addTween('#fly-left', TweenMax.from( $('#fly-left'), 2, {css:{right:'1000px'},immediateRender:true, ease:Quad.easeInOut}));
-
 			controller.addTween('#fly-right', TweenMax.from( $('#fly-right'), 1, {css:{left:'1000px'},immediateRender:true, ease:Quad.easeInOut}));
-			
-		});
-	</script>
-
+	
+	$('a[href*=#]').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+	    && location.hostname == this.hostname) {
+	      var $target = $(this.hash);
+	      $target = $target.length && $target
+	      || $('[name=' + this.hash.slice(1) +']');
+	      if ($target.length) {
+	        var targetOffset = $target.offset().top;
+	        $('html,body')
+	        .animate({scrollTop: targetOffset}, 1000);
+	       return false;
+	      }
+	    }
+	  });
+	});
+</script>
+		<script src="wp-content/themes/bootstrapwp-child/js/bootstrap.js" type="text/javascript"></script>
 <?php get_footer(); ?>

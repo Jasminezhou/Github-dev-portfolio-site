@@ -1,13 +1,14 @@
 <?php
 /**
- * Template Name: jasmine blog Template
+ * Template Name: jasmine Case Template 1
  * Description: Displays blog posts with pagination and featured image.
  *
  * @package WordPress
  * @subpackage BootstrapWP
  */
 get_header(); ?>
-<div class="container">
+
+<div class="container collect">
    
     <div class="row">
         <div class="span12">
@@ -39,37 +40,34 @@ get_header(); ?>
             if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                 <div <?php post_class(); ?>>
-                    
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
-                        <h3><?php the_title();?></h3>
-                    </a>
 
                     <div class="row">
-                        <div class="span1">
-                    <div class="template-meta"><!--post date -->
-                        <?php the_date('M d');?>
-                    </div>
-                    </div>
-
-                    
                         <?php // Post thumbnail conditional display.
                         if ( bootstrapwp_autoset_featured_img() !== false ) : ?>
-                            <div class="span6">
-                     
-                    <div>
-                                <a href="<?php the_permalink(); ?>" title="<?php  the_title_attribute( 'echo=0' ); ?>">
-                                    <?php //the_post_thumbnail('large');
-                                    echo bootstrapwp_autoset_featured_img(); ?>
-                                </a>
+                        <div class="span1">
+                            <div class="template-meta"><!--post date -->
+                                <span class="date"><?php the_time('j');?></span>
+                                <span class="month"><?php the_time('M');?></span>                            
                             </div>
-                            
+                        </div><!--.span1-->
 
-                            
-
-                        <?php else : ?>
 
                             <div class="span6">
-                        <?php endif; ?>
+
+                                <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
+                                    <h3><?php the_title();?></h3>
+                                </a>
+        
+                                <div>
+                                    <a href="<?php the_permalink(); ?>" title="<?php  the_title_attribute( 'echo=0' ); ?>">
+                                        <?php //the_post_thumbnail('large');
+                                        echo bootstrapwp_autoset_featured_img(); ?></a>
+                                </div>
+        
+                                <?php else : ?>
+        
+                                    <div class="span6">
+                                <?php endif; ?>
                                 <?php the_excerpt(); ?>
                             </div>
 
