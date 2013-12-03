@@ -66,28 +66,24 @@ get_header(); ?>
         
                                 <?php else : ?>
         
-                                    <div class="span6">
+                                <div class="span6">
                                 <?php endif; ?>
                                 <?php the_excerpt(); ?>
-                            </div>
+                                </div><!-- /.span6 -->
 
-                    </div><!-- /.row -->
+                            </div><!-- /.span6 -->
 
                     <hr/>
                     <div class="post-footer">
                         <p class="tags"><?php the_tags(); ?></p>
                     <p class="comment" >Comment (<?php comments_number( 'no', '1', '%' ); ?>)</p> 
                     </div>
+                    <?php // end of blog post loop.
+            endwhile; endif; ?>
                     
                 </div><!-- /.post_class -->
-
-            <?php // end of blog post loop.
-            endwhile; endif; ?>
-
-            <?php bootstrapwp_content_nav('nav-below');?>
+    
         </div>
 
-    <?php //get_sidebar('blog'); ?>
         </div><!-- /.row .content -->
-</div><!--/.container -->
     <?php get_footer(); ?>

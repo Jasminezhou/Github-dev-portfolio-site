@@ -13,8 +13,8 @@ get_header(); ?>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div id="cover">     
             <?php the_content(); ?>
-        
     	<?php endwhile; endif; ?>
+    	<img class="downarrow animated fadeOutLeft" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/downarrow.png" alt="scroll down please">
 		</div>
 
 		<!-- #slogan -->
@@ -61,8 +61,8 @@ get_header(); ?>
 		<div id="about">
 		<div class="hero-unit">
 		<?php echo '<h1 id="scale-it">'.$title.'</h1>';?> 
-		<center><?php echo $content;?> 
-		</center></div> 
+		<div class="center"><?php echo $content;?></div>
+		</div> 
 		</div>
 
 
@@ -76,7 +76,7 @@ get_header(); ?>
 		<div id="service">
 		<div class="hero-unit">
 		<?php echo '<h1>'.$title.'</h1>';?> 
-		<center><?php echo $content;?></center>
+		<div class="center"><?php echo $content;?></div>
 		</div></div>
 
 </div><!--/.container -->
@@ -91,9 +91,12 @@ get_header(); ?>
 <script>
 	$(document).ready(function() {
 			var controller = $.superscrollorama();
-			controller.addTween('#scale-it', TweenMax.fromTo( $('#scale-it'), 1, {css:{opacity:0, fontSize:'20px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, fontSize:'80px'}, ease:Quad.easeInOut}));
+
+			controller.addTween('#scale-it', TweenMax.fromTo( $('#scale-it'), 1, {css:{opacity:0, fontSize:'20px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, fontSize:'50px'}, ease:Quad.easeInOut}));
+
 			controller.addTween('#fly-left', TweenMax.from( $('#fly-left'), 2, {css:{right:'1000px'},immediateRender:true, ease:Quad.easeInOut}));
-			controller.addTween('#fly-right', TweenMax.from( $('#fly-right'), 1, {css:{left:'1000px'},immediateRender:true, ease:Quad.easeInOut}));
+
+			
 	
 	$('a[href*=#]').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')

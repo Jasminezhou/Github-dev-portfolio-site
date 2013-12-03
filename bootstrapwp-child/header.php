@@ -26,8 +26,8 @@
           href="<?php echo get_template_directory_uri();?>/assets/ico/apple-touch-icon-57-precomposed.png">
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>  data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="10">
-    <div class="navbar navbar-fixed-top">
+<body <?php body_class(); ?>  data-spy="scroll" data-target=".navbar-fixed-top" data-offset="10">
+    <nav class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -49,5 +49,5 @@
                     ); ?>
             </div>
         </div>
-    </div>
+    </nav>
     <!-- End Header. Begin Template Content -->

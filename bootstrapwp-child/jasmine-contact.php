@@ -33,16 +33,16 @@ get_header(); ?>
             <div class="span4">
                 <p><img class="icons phone" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/phone.png" alt="phone">778 387 1111</p>
                 <p><img class="icons email" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/email.png" alt="email">jingdesignstudio@gmail.com</p>
-                <a href="http://www.pinterest.com/jasminezhou27/boards" target="_blank" class="icons pinterest">pinterest</a>
+               <!-- <a href="http://www.pinterest.com/jasminezhou27/boards" target="_blank" class="icons pinterest">pinterest</a>
                 <a href="http://www.linkedin.com/profile/view?id=292189174&trk=nav_responsive_tab_profile_pic" target="_blank" class="icons linkedin">pinterest</a>
-                <a href="https://twitter.com/Jasmine07206275" target="_blank" class="icons twitter">pinterest</a>
+                <a href="https://twitter.com/Jasmine07206275" target="_blank" class="icons twitter">pinterest</a>-->
             </div><!-- .span4 -->
 
         <div class="span5">
-            <center class="center">
+            <div class="center">
                 <form class="animated fadeInUp"><?php the_content(); ?></form>
                 <?php endwhile; // end of the loop. ?>
-            </center>
+            </div>
                     
         </div><!-- .span5 -->
         </div><!-- .row content -->
