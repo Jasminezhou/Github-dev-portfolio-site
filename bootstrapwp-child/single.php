@@ -29,16 +29,18 @@ get_header(); ?>
 
     <div class="row content">
 
-        <div class="span8">
+        <div class="span10">
              
             <?php the_content(); ?>
+            <div class="span4">
             <?php the_tags('<p>Tags: ', ', ', '</p>'); ?>
             <?php endwhile; // end of the loop. ?>
             <hr/>
 
             <?php comments_template(); ?>
             <?php bootstrapwp_content_nav('nav-below'); ?>
-        </div><!-- /.span8 -->
+        </div><!-- /.span4 -->
+        </div><!-- /.span10 -->
     </div><!--/.row content -->
 
   </div><!--/.container -->

@@ -38,7 +38,7 @@ get_header(); ?>
                                 '<span>' . get_the_date(_x('Y', 'yearly archives date format', 'bootstrapwp')) . '</span>'
                             );
                         } elseif (is_tag()) {
-                            printf(__('Tag: %s', 'bootstrapwp'), '<span>' . single_tag_title('', false) . '</span>');
+                            printf(__('%s', 'bootstrapwp'), '<span>' . single_tag_title('', false) . '</span>');
                             // Show an optional tag description
                             $tag_description = tag_description();
                             if ($tag_description) {

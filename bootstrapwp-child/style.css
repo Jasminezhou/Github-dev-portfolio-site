@@ -28,6 +28,7 @@ body {
 .container{
   background-color: #FFF;
   border-radius: 15px;
+  width: 100%;
 }
 .content{
   margin-bottom: 90px;

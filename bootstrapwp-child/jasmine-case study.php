@@ -44,12 +44,7 @@ get_header(); ?>
                     <div class="row">
                         <?php // Post thumbnail conditional display.
                         if ( bootstrapwp_autoset_featured_img() !== false ) : ?>
-                        <div class="span1">
-                            <div class="template-meta"><!--post date -->
-                                <span class="date"><?php the_time('j');?></span>
-                                <span class="month"><?php the_time('M');?></span>                            
-                            </div>
-                        </div><!--.span1-->
+                        
 
 
                             <div class="span6">
