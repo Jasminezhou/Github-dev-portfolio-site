@@ -14,8 +14,7 @@ get_header(); ?>
 		<div id="cover">     
             <?php the_content(); ?>
     	<?php endwhile; endif; ?>
-    	<img class="downarrow animated fadeOutLeft" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/downarrow.png" alt="scroll down please">
-		</div>
+    	</div>
 
 		<!-- #slogan -->
      	<?php
@@ -87,7 +86,7 @@ get_header(); ?>
   		<script>window.jQuery || document.write('<script src="_/js/jquery-1.9.1.min.js"><\/script>')</script>
   		<script src="wp-content/themes/bootstrapwp-child/js/jquery.superscrollorama.js"></script>
   		
-
+  	
 <script>
 	$(document).ready(function() {
 			var controller = $.superscrollorama();
@@ -114,5 +113,5 @@ get_header(); ?>
 	  });
 	});
 </script>
-		<script src="wp-content/themes/bootstrapwp-child/js/bootstrap.js" type="text/javascript"></script>
+<script src="wp-content/themes/bootstrapwp-child/js/bootstrap.js" type="text/javascript"></script>
 <?php get_footer(); ?>
